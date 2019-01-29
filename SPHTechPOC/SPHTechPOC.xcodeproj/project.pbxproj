@@ -16,6 +16,11 @@
 		C536A23121FF265D00DCAF98 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C536A22F21FF265D00DCAF98 /* LaunchScreen.storyboard */; };
 		C536A23C21FF265D00DCAF98 /* SPHTechPOCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C536A23B21FF265D00DCAF98 /* SPHTechPOCTests.swift */; };
 		C536A24721FF265D00DCAF98 /* SPHTechPOCUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C536A24621FF265D00DCAF98 /* SPHTechPOCUITests.swift */; };
+		C536A25621FF476800DCAF98 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C536A25521FF476800DCAF98 /* NetworkClient.swift */; };
+		C536A25821FF47DE00DCAF98 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C536A25721FF47DE00DCAF98 /* NetworkRequest.swift */; };
+		C536A25C21FF4B8100DCAF98 /* MobileDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C536A25B21FF4B8100DCAF98 /* MobileDataModel.swift */; };
+		C536A25E21FF4C7700DCAF98 /* QuarterlyMobileData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C536A25D21FF4C7700DCAF98 /* QuarterlyMobileData.swift */; };
+		C536A26021FF4F7100DCAF98 /* MobileDataRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C536A25F21FF4F7100DCAF98 /* MobileDataRequest.swift */; };
 		D6AA7C0C57A424AF677D77C1 /* Pods_SPHTechPOCTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5C210611522AFCC9A5A8D31 /* Pods_SPHTechPOCTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +63,11 @@
 		C536A24221FF265D00DCAF98 /* SPHTechPOCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SPHTechPOCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C536A24621FF265D00DCAF98 /* SPHTechPOCUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPHTechPOCUITests.swift; sourceTree = "<group>"; };
 		C536A24821FF265D00DCAF98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C536A25521FF476800DCAF98 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		C536A25721FF47DE00DCAF98 /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
+		C536A25B21FF4B8100DCAF98 /* MobileDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileDataModel.swift; sourceTree = "<group>"; };
+		C536A25D21FF4C7700DCAF98 /* QuarterlyMobileData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuarterlyMobileData.swift; sourceTree = "<group>"; };
+		C536A25F21FF4F7100DCAF98 /* MobileDataRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileDataRequest.swift; sourceTree = "<group>"; };
 		E33F9281D684B43008292425 /* Pods-SPHTechPOC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SPHTechPOC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SPHTechPOC/Pods-SPHTechPOC.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -124,6 +134,9 @@
 		C536A22521FF265C00DCAF98 /* SPHTechPOC */ = {
 			isa = PBXGroup;
 			children = (
+				C536A25A21FF4B2500DCAF98 /* NetworkModel */,
+				C536A25921FF499B00DCAF98 /* UseCases */,
+				C536A25421FF475500DCAF98 /* Networking */,
 				C536A22621FF265C00DCAF98 /* AppDelegate.swift */,
 				C536A22821FF265C00DCAF98 /* ViewController.swift */,
 				C536A22A21FF265C00DCAF98 /* Main.storyboard */,
@@ -150,6 +163,32 @@
 				C536A24821FF265D00DCAF98 /* Info.plist */,
 			);
 			path = SPHTechPOCUITests;
+			sourceTree = "<group>";
+		};
+		C536A25421FF475500DCAF98 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				C536A25521FF476800DCAF98 /* NetworkClient.swift */,
+				C536A25721FF47DE00DCAF98 /* NetworkRequest.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		C536A25921FF499B00DCAF98 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				C536A25F21FF4F7100DCAF98 /* MobileDataRequest.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		C536A25A21FF4B2500DCAF98 /* NetworkModel */ = {
+			isa = PBXGroup;
+			children = (
+				C536A25B21FF4B8100DCAF98 /* MobileDataModel.swift */,
+				C536A25D21FF4C7700DCAF98 /* QuarterlyMobileData.swift */,
+			);
+			path = NetworkModel;
 			sourceTree = "<group>";
 		};
 		E1551BF4906636AB5D54C57F /* Pods */ = {
@@ -301,16 +340,12 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-SPHTechPOC/Pods-SPHTechPOC-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
@@ -325,15 +360,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-SPHTechPOCTests-checkManifestLockResult.txt",
 			);
@@ -347,15 +378,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-SPHTechPOC-checkManifestLockResult.txt",
 			);
@@ -369,15 +396,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-SPHTechPOCUITests-checkManifestLockResult.txt",
 			);
@@ -394,7 +417,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C536A22921FF265C00DCAF98 /* ViewController.swift in Sources */,
+				C536A25E21FF4C7700DCAF98 /* QuarterlyMobileData.swift in Sources */,
 				C536A22721FF265C00DCAF98 /* AppDelegate.swift in Sources */,
+				C536A25821FF47DE00DCAF98 /* NetworkRequest.swift in Sources */,
+				C536A25C21FF4B8100DCAF98 /* MobileDataModel.swift in Sources */,
+				C536A25621FF476800DCAF98 /* NetworkClient.swift in Sources */,
+				C536A26021FF4F7100DCAF98 /* MobileDataRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
