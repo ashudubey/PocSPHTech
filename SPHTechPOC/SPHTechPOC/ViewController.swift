@@ -11,7 +11,6 @@ import RxSwift
 import RxCocoa
 
 /*
- 12345
 
  Wrong Commit
  */
